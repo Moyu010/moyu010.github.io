@@ -1,10 +1,12 @@
+import ExperienceComponent from "./components/Experience";
+
 export default function Home() {
   return (
     <>
       <div className="flex flex-col lg:flex-row">
         {/* Sidebar */}
         <div className="bg-gray-200 w-full lg:w-1/3 lg:sticky lg:top-0 lg:h-screen">
-          <div className="flex flex-col items-center justify-center h-full w-4/5 mx-auto gap-2">
+          <div className="flex flex-col items-center justify-center h-full w-4/5 mx-auto gap-2 py-10">
             <h1 className="text-4xl font-bold">Hi, I am <br />Jiayi Matthew Gu👋🏼</h1>
             <h2>Student Electrical and Software Engineer</h2>
             <div className="flex justify-center items-center gap-3 md:gap-5 mt-7 mb-7">
@@ -30,8 +32,8 @@ export default function Home() {
 
         {/* Main Content */}
         <div className="flex-1 overflow-auto">
-          <div className="flex justify-center items-center lg:mt-24 mt-10">
-            <div className="w-4/5 page-section mt-2">
+          <div className="flex flex-col justify-center items-center lg:mt-24 mt-10 space-y-10">
+            <div className="page-section mt-2">
               <h2 className="text-4xl text-center font-bold text-gray-800">
                 About Me
               </h2>
@@ -48,6 +50,14 @@ export default function Home() {
                 <p className="indent-2 mb-3">
                   I'm excited about applying the skills I've learned to make a positive impact and look forward to connecting with like-minded individuals who are also excited about the future of technology. Let's shape the future together!
                 </p>
+              </div>
+            </div>
+            <div className="page-section">
+              <h2 className="text-4xl text-center font-bold text-gray-800">
+                Experiences
+              </h2>
+              <div className="mt-4">
+                <ExperienceComponent />
               </div>
             </div>
           </div>

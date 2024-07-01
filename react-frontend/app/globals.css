@@ -25,7 +25,11 @@ body {
 }
 
 .page-section {
-  @apply max-w-full mx-auto mb-10
+  @apply max-w-full mx-auto w-4/5
+}
+
+.pill {
+  @apply bg-blue-500 text-white px-4 py-2 rounded-full
 }
 
 @layer utilities {
