@@ -20,7 +20,7 @@ export default function Home() {
             </div>
             <div>
               <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                <button className="bg-blue-500 hover:bg-blue-600/85 text-white font-bold py-2 px-4 rounded-full">
                   Resume &gt;&gt;
                 </button>
               </a>
