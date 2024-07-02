@@ -34,7 +34,7 @@ export default function Home() {
         {/* Main Content */}
         <div className='flex-1 overflow-auto'>
           <div className='flex flex-col justify-center items-center lg:mt-24 mt-10 space-y-10'>
-            <div className='page-section mt-2'>
+            <div id='about' className='page-section mt-4 pt-4'>
               <h2 className='text-4xl text-center font-bold text-gray-800'>
                 About Me
               </h2>
@@ -61,7 +61,7 @@ export default function Home() {
 
               </div>
             </div>
-            <div className='page-section'>
+            <div id='projects' className='page-section'>
               <h2 className='text-4xl text-center font-bold text-gray-800'>
                 Projects
               </h2>
