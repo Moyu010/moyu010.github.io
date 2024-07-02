@@ -25,18 +25,20 @@ const ProjectComponent = () => {
             </div>
             <div className='flex flex-col'>
               <h1 className='text-2xl font-bold pt-2 pb-2'>{project.title}</h1>
-              <div>
+              <div className='flex-grow'>
                 <p>
                   {project.summary}
                 </p>
               </div>
-              <div className='flex flex-row space-x-3'>
+              <div className='flex flex-row'>
+                
+              </div>
+              <div className='flex flex-row space-x-3 mt-auto justify-end'>
                 {project.tech_stack.map((tech, idx) => (
                   <span key={idx} className='tech-tag'>{tech}</span>
                 ))}
               </div>
             </div>
-
           </div>
         </div>
       ))}
