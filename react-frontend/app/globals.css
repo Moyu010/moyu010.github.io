@@ -8,8 +8,7 @@
 }
 
 body {
-  background: #ebf0fa;
-  @apply text-black;
+  @apply text-black bg-sky-50;
 }
 
 .header-bar {
@@ -29,7 +28,11 @@ body {
 }
 
 .pill {
-  @apply bg-blue-500 text-white px-4 py-2 rounded-full
+  @apply block p-6 max-w-full bg-sky-100 rounded-2xl border border-gray-200 shadow-md hover:bg-sky-200/75
+}
+
+.tech-tag {
+  @apply border border-dashed border-gray-200 rounded-full px-2 py-1 text-xs font-medium
 }
 
 @layer utilities {
