@@ -7,23 +7,23 @@ export default function Home() {
       <div className='flex flex-col lg:flex-row'>
         {/* Sidebar */}
         <div className='bg-gray-200 w-full lg:w-1/3 lg:sticky lg:top-0 lg:h-screen'>
-          <div className='flex flex-col items-center justify-center h-full w-4/5 mx-auto gap-2 py-10'>
+          <div className='flex flex-col items-center justify-center lg:h-full w-4/5 mx-auto gap-2 lg:my-10 my-48'>
             <h1 className='text-4xl font-bold'>Jiayi Matthew Gu</h1>
             <h2>Student Electrical and Software Engineer</h2>
-            <div className='flex justify-center items-center gap-3 md:gap-5 mt-7 mb-7'>
+            <div className='flex justify-center items-center gap-3 lg:gap-5 mt-7 mb-7'>
               <a href='https://www.linkedin.com/in/jiayi-matthew-gu/' target='_blank' rel='noopener noreferrer'>
-                <img src='/linkedin.svg' alt='LinkedIn' className='w-7 md:w-10 hover:scale-105' />
+                <img src='/linkedin.svg' alt='LinkedIn' className='w-10 hover:scale-105' />
               </a>
               <a href='https://github.com/Moyu010' target='_blank' rel='noopener noreferrer'>
-                <img src='/github.svg' alt='GitHub' className='w-7 md:w-10 hover:scale-105' />
+                <img src='/github.svg' alt='GitHub' className='w-10 hover:scale-105' />
               </a>
               <a href='mailto:Matthewgjy@gmail.com' target='_blank' rel='noopener noreferrer'>
-                <img src='/gmail.svg' alt='Gmail' className='w-7 md:w-10 hover:scale-105' />
+                <img src='/gmail.svg' alt='Gmail' className='w-10 hover:scale-105' />
               </a>
             </div>
             <div>
               <a href='/resume.pdf' target='_blank' rel='noopener noreferrer'>
-                <button className='bg-blue-500 hover:bg-blue-600/85 text-white font-bold py-2 px-4 rounded-full'>
+                <button className='bg-blue-500 hover:bg-blue-600/85 text-white font-bold py-2 px-4 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition duration-150 ease-in-out'>
                   Resume &gt;&gt;
                 </button>
               </a>
@@ -32,8 +32,8 @@ export default function Home() {
         </div>
 
         {/* Main Content */}
-        <div className='flex-1 overflow-auto'>
-          <div className='flex flex-col justify-center items-center lg:mt-24 mt-10 space-y-10'>
+        <div className='flex-1 overflow-auto lg:mt-24 mt-10'>
+          <div className='flex flex-col justify-center items-centerspace-y-10'>
             <div id='about' className='page-section mt-4 pt-4'>
               <h2 className='text-4xl text-center font-bold text-gray-800'>
                 About Me
