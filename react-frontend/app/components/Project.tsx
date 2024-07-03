@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { getProject, Project } from '../api/getProject';
-import Link from 'next/link';
+import IconLink from './IconLink';
 
 const ProjectComponent = () => {
   const [projects, setProjects] = useState<Project[]>();
@@ -18,25 +18,45 @@ const ProjectComponent = () => {
   return (
     <div className='space-y-4'>
       {projects && projects.map((project, index) => (
-        <div key={index} className='pill'>
+        <div key={index} className='project-card'>
           <div className='flex flex-col md:flex-row space-x-4 '>
             <div className='mt-2 mb-2 w-96 h-48'>
               <img className='object-fill' src={`{/project/${project.id}_cover.png}`} alt={`${project.title}`} />
             </div>
             <div className='flex flex-col'>
-              <h1 className='text-2xl font-bold pt-2 pb-2'>{project.title}</h1>
+              <div className='flex flex-row'>
+                <h1 className='text-2xl font-bold pt-2 pb-2 flex flex-grow'>{project.title}</h1>
+                <div className='flex flex-row space-x-4 pr-4'>
+                  {project.link.demo && (
+                    <IconLink link={project.link.demo} icon='/demo.svg' text='Demo' />
+                  )}
+                  {project.link.github && (
+                    <IconLink link={project.link.github} icon='/github.svg' text='Demo' />
+                  )}
+                  {project.link.report && (
+                    <IconLink link={project.link.report} icon='/report.svg' text='Demo' />
+                  )}
+                </div>
+              </div>
+
               <div className='flex-grow'>
                 <p>
                   {project.summary}
                 </p>
               </div>
               <div className='flex flex-row'>
-                
+
               </div>
-              <div className='flex flex-row space-x-3 mt-auto justify-end'>
-                {project.tech_stack.map((tech, idx) => (
-                  <span key={idx} className='tech-tag'>{tech}</span>
-                ))}
+              <div className='flex flex-row pt-6'>
+                <div className='flex flex-row space-x-3 flex-grow'>
+                  {project.tech_stack.map((tech, idx) => (
+                    <span key={idx} className='tech-tag'>{tech}</span>
+                  ))}
+                </div>
+                <div>
+                  <p className='text-sm text-gray-500 mt-1'>{project.date.toLocaleString('en-AU', { year: 'numeric', month: 'long' })}</p>
+                </div>
+
               </div>
             </div>
           </div>

@@ -27,8 +27,8 @@ body {
   @apply max-w-full mx-auto w-4/5
 }
 
-.pill {
-  @apply block p-6 max-w-full bg-sky-100 rounded-2xl border border-gray-200 shadow-md hover:bg-sky-200/75
+.project-card {
+  @apply block p-6 max-w-full bg-sky-100 rounded-2xl border border-gray-200 shadow-md hover:bg-sky-200/75 transition duration-300
 }
 
 .tech-tag {

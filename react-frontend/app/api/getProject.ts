@@ -71,6 +71,9 @@ export async function getProject(): Promise<Project[]> {
         link: { github: null, demo: null, report: null }
     }
     ];
+    projects.sort((a, b) => {
+        return b.date.getTime() - a.date.getTime();
+    });
     return projects;
 };
 
