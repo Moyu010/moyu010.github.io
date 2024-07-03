@@ -44,17 +44,14 @@ const ProjectComponent = () => {
                   {project.summary}
                 </p>
               </div>
-              <div className='flex flex-row'>
-
-              </div>
               <div className='flex flex-row pt-6'>
-                <div className='flex flex-row space-x-3 flex-grow'>
+                <div className='flex flex-row space-x-3 flex-grow flex-wrap'>
                   {project.tech_stack.map((tech, idx) => (
-                    <span key={idx} className='tech-tag'>{tech}</span>
+                    <div key={idx} className='tech-tag'>{tech}</div>
                   ))}
                 </div>
                 <div>
-                  <p className='text-sm text-gray-500 mt-1'>{project.date.toLocaleString('en-AU', { year: 'numeric', month: 'long' })}</p>
+                  <p className='text-sm text-gray-500 mt-1'>{project.date.toLocaleString('en-AU', { year: 'numeric', month: 'short' })}</p>
                 </div>
 
               </div>
