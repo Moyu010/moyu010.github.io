@@ -20,9 +20,7 @@ const ProjectComponent = () => {
       {projects && projects.map((project, index) => (
         <div key={index} className='project-card'>
           <div className='flex flex-col md:flex-row space-x-4 '>
-            <div className='mt-2 mb-2 w-96 h-48'>
-              <img className='object-fill' src={`{/project/${project.id}_cover.png}`} alt={`${project.title}`} />
-            </div>
+            <img className='mt-2 mb-2 w-96 h-40 object-scale-down' src={`${project.cover}`} alt={`${project.title}`} />
             <div className='flex flex-col'>
               <div className='flex flex-row'>
                 <h1 className='text-2xl font-bold pt-2 pb-2 flex flex-grow'>{project.title}</h1>

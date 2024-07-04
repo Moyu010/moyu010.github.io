@@ -10,21 +10,21 @@ export async function getProject(): Promise<Project[]> {
         link: { github: "https://github.com/Moyu010/moyu010.github.io", demo: "https://www.moyu010.github.io", report: null },
     }, {
         id: 2,
-        cover: "/logo.jpg",
+        cover: "/project/true-rms-converter/cover.png",
         title: "True RMS Converter",
         date: new Date("2024-06"),
         summary: "A prototype circuit on breadboard that converts AC voltage to DC voltage and outputs the true RMS value with an error rate of <1.2%. Built with basic electronic components and operational amplifier ICs.",
         tech_stack: ["Analogue Electronics", "Operational Amplifiers"],
-        link: { github: null, demo: null, report: null },
+        link: { github: "https://github.com/Moyu010/True-RMS-Converter-Circuit-Diagram", demo: "/project/true-rms-converter/demo.jpg", report: "/project/true-rms-converter/report.pdf" },
     },
     {
         id: 6,
-        cover: "/logo.jpg",
+        cover: "/project/keyboard-arm-control/cover.png",
         title: "Keyboard Arm Control",
         date: new Date("2024-02"),
         summary: "A feature allowing keyboard to control a 6-DOF robotic arm in both task-space and joint space. SDL2 is used to sample the input, with ROS2 used to control the arm. This is used in 2024 University Rover Challenge as part of the team Monash Nova Rover. ",
         tech_stack: ["C++", "ROS2", "SDL2"],
-        link: { github: null, demo: null, report: null },
+        link: { github: null, demo: "https://drive.google.com/file/d/1gFM0UjDIW4nwXPk7SqH207V13rgUh7jn/view?usp=sharing", report: null },
     },
 
     {
@@ -38,11 +38,13 @@ export async function getProject(): Promise<Project[]> {
     },
     {
         id: 7,
-        cover: "/logo.jpg",
+        cover: "/project/rtos/cover.png",
         title: "RTOS Image Processing",
         date: new Date("2024-06"),
-        summary: "A prototype circuit on breadboard that converts AC voltage to DC voltage and outputs the true RMS value with an error rate of <1.2%. Built with basic electronic components and operational amplifier ICs.",        tech_stack: ["FPGA", "Edge Detection", "µC/OS-II"],
-        link: { github: null, demo: null, report: null },
+        summary: "An image processing system that detects edges, blurs and inverts frames in a video stream using an FPGA and µC/OS-II, outputing through a VGA port. The system is capable of performing numerous image processing algorithms in real-time and displaying the processed video frames on a monitor.", 
+        tech_stack: ["FPGA", "Edge Detection", "µC/OS-II"],
+        link: { github: null, demo: null, report: "/project/rtos/report.pdf" },
+        // TODO: Add GitHub link
     },
     {
         id: 4,
@@ -51,7 +53,7 @@ export async function getProject(): Promise<Project[]> {
         date: new Date("2023-11"),
         summary: "A 5-stage CPU clocked at 50MHz developed using DE-10 Lite FPGA board and Verilog. The CPU is capable of executing basic instructions such as ADD, SUB, AND, OR, XOR, and branching instructions.",        
         tech_stack: ["Verilog", "Quartus", "FPGA"],
-        link: { github: null, demo: null, report: null }
+        link: { github: "https://github.com/Moyu010/HDL-Simulated-CPU", demo: null, report: "/project/simulated-cpu/report.pdf" }
     },
     {
         id: 5,
