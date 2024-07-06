@@ -26,13 +26,13 @@ const ProjectComponent = () => {
                 <h1 className='text-2xl font-bold pt-2 pb-2 flex flex-grow'>{project.title}</h1>
                 <div className='flex flex-row space-x-4 pr-4 pl-4'>
                   {project.link.demo && (
-                    <IconLink link={project.link.demo} icon='/demo.svg' text='Demo' />
+                    <IconLink destUrl={project.link.demo} iconName='demo.svg' altText='Demo' />
                   )}
                   {project.link.github && (
-                    <IconLink link={project.link.github} icon='/github.svg' text='Demo' />
+                    <IconLink destUrl={project.link.github} iconName='github.svg' altText='View Source' />
                   )}
                   {project.link.report && (
-                    <IconLink link={project.link.report} icon='/report.svg' text='Demo' />
+                    <IconLink destUrl={project.link.report} iconName='report.svg' altText='Report' />
                   )}
                 </div>
               </div>

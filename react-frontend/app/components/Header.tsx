@@ -37,7 +37,7 @@ const Header = () => {
           </div>
         </Link>
         <div>
-          
+
         </div>
         <nav className="hidden md:nav-bar">
           <div className="nav-link" onClick={() => scrollToSection('home')}>Home</div>
@@ -49,5 +49,5 @@ const Header = () => {
     </header>
   );
 };
-
+// TODO: Make the menu button, and make the menu responsive
 export default Header;
