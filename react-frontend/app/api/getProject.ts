@@ -29,12 +29,12 @@ export async function getProject(): Promise<Project[]> {
 
     {
         id: 3,
-        cover: "/logo.jpg",
+        cover: "/project/motion-compensation/cover.png",
         title: "Motion Compensation Visualizer (MCV)",
         date: new Date("2023-06"),
         summary: "Custom matlab code that visualizes the motion compensation process in video compression. The code reads a video file, applies motion compensation for the selected frames, and displays the original and compensated frames side by side. Currently, Exaustive Search, Three Step Search and New Three Step Search are implemented. ",
         tech_stack: ["MATLAB", "Video Compression"],
-        link: { github: "https://github.com/Moyu010/Motion-Compensation-Visualizer", demo: null, report: "/project/motion-compensation/report.pdf" },
+        link: { github: "https://github.com/Moyu010/Motion-Compensation-Visualizer", demo: "/project/motion-compensation/presentation.pptx", report: "/project/motion-compensation/report.pdf" },
     },
     {
         id: 7,
@@ -48,7 +48,7 @@ export async function getProject(): Promise<Project[]> {
     },
     {
         id: 4,
-        cover: "/logo.jpg",
+        cover: "/project/simulated-cpu/cover.png",
         title: "Simulated CPU",
         date: new Date("2023-11"),
         summary: "A 5-stage CPU clocked at 50MHz developed using DE-10 Lite FPGA board and Verilog. The CPU is capable of executing basic instructions such as ADD, SUB, AND, OR, XOR, and branching instructions.",        
@@ -57,7 +57,7 @@ export async function getProject(): Promise<Project[]> {
     },
     {
         id: 5,
-        cover: "/logo.jpg",
+        cover: "/project/exchange-tools/cover.png",
         title: "Monash-UniMelb-ExchangeTools",
         date: new Date("2021-12"),
         summary: "A webscrapper that fetches data from the Monash University and (The) University of Melbourne exchange partner list and ranks the universities based on the ARWU ranking. The result is given as an xlsx file. ",     

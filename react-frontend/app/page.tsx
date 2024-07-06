@@ -55,11 +55,13 @@ export default function Home() {
             </div>
             <div className='page-section'>
               <h2 className='text-4xl text-center font-bold text-gray-800'>
-                Tech Stacks
+                My Interests
               </h2>
-              <div className='mt-4'>
-
-              </div>
+            </div>
+            <div className='page-section'>
+              <h2 className='text-4xl text-center font-bold text-gray-800'>
+                Technologies
+              </h2>
             </div>
             <div id='projects' className='page-section'>
               <h2 className='text-4xl text-center font-bold text-gray-800'>

@@ -20,11 +20,11 @@ const ProjectComponent = () => {
       {projects && projects.map((project, index) => (
         <div key={index} className='project-card'>
           <div className='flex flex-col md:flex-row space-x-4 '>
-            <img className='mt-2 mb-2 w-96 h-40 object-scale-down' src={`${project.cover}`} alt={`${project.title}`} />
-            <div className='flex flex-col'>
+            <img className='mt-2 mb-2 lg:w-1/3 rounded-xl object-fit' src={`${project.cover}`} alt={`${project.title}`} />
+            <div className='flex flex-col lg:w-2/3'>
               <div className='flex flex-row'>
                 <h1 className='text-2xl font-bold pt-2 pb-2 flex flex-grow'>{project.title}</h1>
-                <div className='flex flex-row space-x-4 pr-4'>
+                <div className='flex flex-row space-x-4 pr-4 pl-4'>
                   {project.link.demo && (
                     <IconLink link={project.link.demo} icon='/demo.svg' text='Demo' />
                   )}
