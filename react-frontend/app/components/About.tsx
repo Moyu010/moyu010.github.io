@@ -1,4 +1,4 @@
-export default function About() {
+export default function AboutComponent() {
   const text: string[] = [
     "Hello, I am Jiayi Gu (but I go by 'Matthew'). I'm an undergraduate student at Monash University, Australia, majoring in Electrical Engineering and Computer Science. I'm deeply passionate about the future of technology and the changes it can bring to our world.",
     "With a strong academic record (WAM of 92.72, equivalent to a 4.0 GPA), I am committed to excellence and high performance in everything I do.",
