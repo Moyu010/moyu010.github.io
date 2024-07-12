@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  @apply text-black bg-sky-50;
+}
+
+.header-bar {
+  @apply max-w-full mx-auto flex flex-row items-center justify-between 
+}
+
+.nav-bar {
+  @apply flex flex-row items-center gap-8
+}
+
+.nav-link {
+  @apply hover:opacity-75 font-medium cursor-pointer font-bold
+}
+
+.page-section {
+  @apply max-w-full mx-auto w-11/12 md:w-4/5 pt-8 pb-8
+}
+
+.section-title{
+  @apply text-4xl font-bold text-gray-800
+
+}
+
+.project-card {
+  @apply block p-6 max-w-full bg-sky-100 rounded-2xl border border-gray-200 shadow-md hover:bg-sky-200/75 transition duration-300
+}
+
+.tech-tag {
+  @apply border-2 border-dashed bg-blue-300 rounded-full px-2 py-1 text-xs font-medium inline-flex justify-center items-center
+}
+
+.icon-link {
+  @apply w-7 md:w-10 hover:scale-105
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
