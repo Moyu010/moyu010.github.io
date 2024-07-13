@@ -2,12 +2,12 @@
 export async function getProject(): Promise<Project[]> {
     const projects: Project[] = [{
         id: 1,
-        cover: "/logo.jpg",
+        cover: "/project/personal-website/cover.png",
         title: "Personal Website",
         date: new Date("2024-07"),
         summary: "A personal website to showcase my projects and experiences, and experiment with web design. Built with NextJS, TailwindCSS, and Zustand. ",
         tech_stack: ["HTML", "TailwindCSS", "NextJS", "Zustand"],
-        link: { github: "https://github.com/Moyu010/moyu010.github.io", demo: "https://www.moyu010.github.io", report: null },
+        link: { github: "https://github.com/Moyu010/moyu010.github.io", demo: "https://moyu010.github.io/", report: null },
     }, {
         id: 2,
         cover: "/project/true-rms-converter/cover.png",

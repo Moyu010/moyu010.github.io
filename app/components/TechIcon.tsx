@@ -36,7 +36,10 @@ export default function TechIconComponent() {
         <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-3 gap-y-6 w-full justify-center items-center pt-12'>
           {techIcons.map(([iconName, altText], idx) => (
             <div key={idx} className='h-20 w-full relative group flex justify-center'> {/* Adjusted line */}
-              <img className="hover:animate-pulse top-0 w-full h-16 object-contain mx-auto" src={`/icon/${iconName}`} alt={altText} /> {/* Added object-contain */}
+              <div className="h-18 w-18">
+              <img className="hover:animate-float top-0 w-full h-16 object-contain mx-auto group-hover:shadow-lg" src={`/icon/${iconName}`} alt={altText} />
+              </div>
+              
               <div className="absolute bottom-0 flex justify-center bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <span className="font-bold">{altText}</span>
               </div>
