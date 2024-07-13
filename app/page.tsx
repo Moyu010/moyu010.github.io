@@ -14,7 +14,7 @@ export default function Home() {
         {/* TODO: A scrolling section indicator on the side of the left sidebar */}
         {/* Main Content */}
         <div className='flex-1 overflow-auto lg:mt-12 mt-10'>
-          <div className='flex flex-col justify-center items-centerspace-y-10'>
+          <div className='flex flex-col justify-center items-center space-y-10'>
             <AboutComponent />
             <TechIconComponent />
             <ProjectComponent />

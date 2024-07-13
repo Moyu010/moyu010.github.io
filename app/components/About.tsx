@@ -13,7 +13,7 @@ export default function AboutComponent() {
       </h2>
       <div className='mt-4 text-gray-800'>
         {text.map((para, idx) => (
-          <p key={idx} className='indent-2 mb-1'>{para}</p>
+          <p key={idx} className='indent-2 mb-1 text-justify'>{para}</p>
         ))}
       </div>
     </div>

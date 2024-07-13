@@ -24,12 +24,12 @@ const ProjectComponent = () => {
         <div className='space-y-4'>
           {projects && projects.map((project, index) => (
             <div key={index} className='project-card'>
-              <div className='flex flex-col md:flex-row space-x-4 '>
-                <img className='mt-2 mb-2 lg:w-1/3 rounded-xl object-fit' src={`${project.cover}`} alt={`${project.title}`} />
-                <div className='flex flex-col lg:w-2/3'>
-                  <div className='flex flex-row'>
-                    <h1 className='text-2xl font-bold pt-2 pb-2 flex flex-grow'>{project.title}</h1>
-                    <div className='flex flex-row space-x-4 pr-4 pl-4'>
+              <div className='flex flex-col xl:flex-row space-x-4 '>
+                <img className='mt-2 mb-2 xl:w-1/3 rounded-xl object-fit' src={`${project.cover}`} alt={`${project.title}`} />
+                <div className='flex flex-col xl:w-2/3'>
+                  <div className='flex flex-col md:flex-row'>
+                    <h1 className='text-xl md:text-2xl font-bold pt-2 pb-2 flex flex-grow'>{project.title}</h1>
+                    <div className='flex flex-row justify-center space-x-4 p-2 md:pr-4 md:pl-4 md:p-0'>
                       {project.link.demo && (
                         <IconLink destUrl={project.link.demo} iconName='demo.svg' altText='Demo' />
                       )}
@@ -43,18 +43,21 @@ const ProjectComponent = () => {
                   </div>
 
                   <div className='flex-grow'>
-                    <p>
+                    <p className='text-justify'>
                       {project.summary}
                     </p>
                   </div>
                   <div className='flex flex-row pt-6'>
-                    <div className='flex flex-row space-x-3 flex-grow flex-wrap'>
+                    <div className='flex flex-row flex-grow flex-wrap'>
                       {project.tech_stack.map((tech, idx) => (
-                        <div key={idx} className='tech-tag'>{tech}</div>
+                        <div className='pr-2 pt-1'>
+                          <div key={idx} className='tech-tag'>{tech}</div>
+                        </div>
+
                       ))}
                     </div>
                     <div>
-                      <p className='text-sm text-gray-500 mt-1'>{project.date.toLocaleString('en-AU', { year: 'numeric', month: 'short' })}</p>
+                      <p className='text-sm text-gray-500 mt-2'>{project.date.toLocaleString('en-AU', { year: 'numeric', month: 'short' })}</p>
                     </div>
 
                   </div>

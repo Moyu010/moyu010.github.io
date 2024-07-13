@@ -29,7 +29,7 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed top-0 left-0 w-full md:hidden z-50 px-5 py-5 transition-all duration-300 ${isScrolled ? 'transform translate-y-[-100%]' : 'transform translate-y-0'}  bg-slate-300 shadow-lg`}>
+    <header className={`fixed top-0 left-0 w-full lg:hidden z-50 px-5 py-5 transition-all duration-300 ${isScrolled ? 'transform translate-y-[-100%]' : 'transform translate-y-0'}  bg-slate-300 shadow-lg`}>
       <div className="header-bar">
         <Link href="/" passHref>
           <div className="flex items-center gap-2">
@@ -39,7 +39,7 @@ const Header = () => {
         <div>
 
         </div>
-        <nav className="hidden md:nav-bar">
+        <nav className="nav-bar">
           <div className="nav-link" onClick={() => scrollToSection('home')}>Home</div>
           <div className="nav-link" onClick={() => scrollToSection('about')}>About</div>
           <div className="nav-link" onClick={() => scrollToSection('projects')}>Recent Projects</div>
