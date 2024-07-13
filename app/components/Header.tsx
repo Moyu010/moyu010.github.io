@@ -43,7 +43,6 @@ const Header = () => {
           <div className="nav-link" onClick={() => scrollToSection('home')}>Home</div>
           <div className="nav-link" onClick={() => scrollToSection('about')}>About</div>
           <div className="nav-link" onClick={() => scrollToSection('projects')}>Recent Projects</div>
-          <Link href="/contact" passHref><div className="nav-link">Contact</div></Link>
         </nav>
       </div>
     </header>

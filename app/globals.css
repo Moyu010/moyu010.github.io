@@ -24,12 +24,15 @@ body {
 }
 
 .page-section {
-  @apply max-w-full mx-auto w-11/12 lg:w-4/5 w-5/6 pt-8 pb-8
+  @apply max-w-full mx-auto w-11/12 lg:w-4/5 w-5/6 mt-8 mb-6 pb-4
+}
+
+.section-subtitle {
+  @apply text-lg font-semibold text-gray-600 pb-2
 }
 
 .section-title{
-  @apply text-4xl font-bold text-gray-800
-
+  @apply text-5xl font-bold text-gray-800 pb-2
 }
 
 .project-card {

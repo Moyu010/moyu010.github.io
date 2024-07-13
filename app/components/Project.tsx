@@ -17,6 +17,9 @@ const ProjectComponent = () => {
 
   return (
     <div id='projects' className='page-section'>
+      <h3 className='section-subtitle'>
+        I have made...
+      </h3>
       <h2 className='section-title'>
         Projects
       </h2>

@@ -26,8 +26,11 @@ export default function TechIconComponent() {
   ]
   return (
     <div className='page-section'>
-      <h2 className='section-title'>
+      <h3 className='section-subtitle'>
         I have worked with...
+      </h3>
+      <h2 className='section-title'>
+        Tech Stacks
       </h2>
       <div>
         <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-3 gap-y-6 w-full justify-center items-center pt-12'>
