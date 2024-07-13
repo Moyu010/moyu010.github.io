@@ -31,12 +31,16 @@ jobs:
           static_site_generator: next
 
       - name: Build with Next.js 🏗️
-        run: npx next build
+        run: npm run build
+
+      - name: List output directory
+        run: ls -R ./out
 
       - name: Upload artifact 📡
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./out
+          name: portfolio-website
 
   deploy:
     environment:
@@ -47,6 +51,14 @@ jobs:
     needs: build
 
     steps:
+      - name: Download artifact 📥
+        uses: actions/download-artifact@v2
+        with:
+          name: portfolio-website
+
+      - name: List downloaded artifact contents
+        run: ls -R ./portfolio-website
+
       - name: Publish to GitHub Pages 🚀
         id: deployment
         uses: actions/deploy-pages@v4
