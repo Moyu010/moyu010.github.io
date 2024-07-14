@@ -25,7 +25,7 @@ export default function TechIconComponent() {
     ["ros2.svg", "ROS2"]
   ]
   return (
-    <div className='page-section'>
+    <div id='tech-stacks' className='page-section'>
       <h3 className='section-subtitle'>
         I have worked with...
       </h3>

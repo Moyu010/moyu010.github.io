@@ -26,7 +26,7 @@ const ProjectComponent = () => {
       <div className='mt-4'>
         <div className='space-y-4'>
           {projects && projects.map((project, index) => (
-            <div key={index} className='project-card'>
+            <div key={project.id} className='project-card'>
               <div className='flex flex-col xl:flex-row space-x-4 '>
                 <img className='mt-2 mb-2 xl:w-1/3 rounded-xl object-fit' src={`${project.cover}`} alt={`${project.title}`} />
                 <div className='flex flex-col xl:w-2/3'>
@@ -53,8 +53,8 @@ const ProjectComponent = () => {
                   <div className='flex flex-row pt-6'>
                     <div className='flex flex-row flex-grow flex-wrap'>
                       {project.tech_stack.map((tech, idx) => (
-                        <div className='pr-2 pt-1'>
-                          <div key={idx} className='tech-tag'>{tech}</div>
+                        <div key={idx} className='pr-2 pt-1'>
+                          <div className='tech-tag'>{tech}</div>
                         </div>
 
                       ))}
