@@ -2,8 +2,8 @@ export default function SidebarComponent() {
     return (
         <div className='bg-gray-200 w-full lg:w-1/3 lg:sticky lg:top-0 lg:h-screen'>
             <div className='flex flex-col items-center justify-center lg:h-full w-4/5 mx-auto gap-2 lg:my-10 my-48'>
-                <h1 className='text-4xl font-bold'>Jiayi Matthew Gu</h1>
-                <h2>Student Electrical and Software Engineer</h2>
+                <h1 className='text-4xl font-bold text-center'>Jiayi Matthew Gu</h1>
+                <h2 className="text-center">Student Electrical and Software Engineer</h2>
                 <div className='flex justify-center items-center gap-3 lg:gap-5 mt-7 mb-7'>
                     <a href='https://www.linkedin.com/in/jiayi-matthew-gu/' target='_blank' rel='noopener noreferrer'>
                         <img src='/icon/linkedin.svg' alt='LinkedIn' className='w-10 hover:scale-105' />

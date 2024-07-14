@@ -20,16 +20,19 @@ body {
 }
 
 .nav-link {
-  @apply hover:opacity-75 font-medium cursor-pointer font-bold
+  @apply hover:opacity-75 font-medium cursor-pointer font-bold hidden md:block
 }
 
 .page-section {
-  @apply max-w-full mx-auto w-11/12 md:w-4/5 pt-8 pb-8
+  @apply max-w-full mx-auto w-11/12 lg:w-4/5 w-5/6 mt-8 mb-6 pb-4
+}
+
+.section-subtitle {
+  @apply text-lg font-semibold text-gray-600 pb-2
 }
 
 .section-title{
-  @apply text-4xl font-bold text-gray-800
-
+  @apply text-4xl md:text-5xl font-bold text-gray-800 pb-2
 }
 
 .project-card {
@@ -44,8 +47,20 @@ body {
   @apply w-7 md:w-10 hover:scale-105
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-3px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .animate-float {
+    animation: float 2s ease-in-out infinite;
   }
 }
